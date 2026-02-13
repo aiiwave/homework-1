@@ -8,8 +8,8 @@ import com.narxoz.rpg.equipment.Armor;
 
 public class Main {
     public static void main(String[] args) {
-        Character Factory charFactory = new CharacterFactory();
-        Equipment Factory equipFactory = new EquipmentFactory();
+        CharacterFactory charFactory = new CharacterFactory();
+        EquipmentFactory equipFactory = new EquipmentFactory();
 
         Character myWarrior = charFactory.createCharacter("Warrior", "Aragorn");
         Weapon sword = equipFactory.createWeapon("Sword");
