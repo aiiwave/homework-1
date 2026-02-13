@@ -1,30 +1,32 @@
 package com.narxoz.rpg.character;
 
-/**
- * Base interface for all character types in the RPG system.
- *
- * TODO: Decide if this should be an interface or abstract class
- * Think: What's common to ALL characters?
- * Think: What varies between character types?
- *
- * Factory Method Pattern:
- * This represents the "Product" in the Factory Method pattern.
- * Different character classes (Warrior, Mage, Archer) are concrete products.
- */
-public interface Character {
+import com.narxoz.rpg.equipment.Weapon;
+import com.narxoz.rpg.equipment.Armor;
 
-    // TODO: Define common character behaviors
-    // Consider methods like:
-    // - String getName()
-    // - int getHealth()
-    // - int getMana()
-    // - int getStrength()
-    // - int getIntelligence()
-    // - void displayStats()
-    // - void useSpecialAbility()
+public abstract class Character{
+    protected String name;
+    protected int health;
+    protected int mana;
+    protected int strength;
+    protected int intelligence;
+    protected Weapon weapon;
+    protected Armor armor;
 
-    // TODO: Think about equipment
-    // Should characters know about their equipped items?
-    // How will you handle equipping weapons and armor?
+    public Character(String name){
+        this.name = name;
+    }
+    public abstract String useSpecialAbility();
+    public abstract String getCharacterClass();
 
+    public void setWeapon(Weapon weapon){this.weapon = weapon;}
+    public void setArmor(Armor armor){this.armor = armor;}
+
+    public String getDetails(){
+        return String.format(
+            "Name: %s [%s]\nHP: %d, MP: %d\nSTR: %d, INT: %d",
+            name, getCharacterClass(), health, mana, strength, intelligence
+        );
+    }
+    public String getName(){return name;}
 }
+
