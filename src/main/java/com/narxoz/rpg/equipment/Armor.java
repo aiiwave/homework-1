@@ -11,7 +11,7 @@ public class Armor{
     public String getName(){
         return name;
     }
-    public int getDefenseValue(){
+    public int getDefense(){
         return defense;
     }
 }
