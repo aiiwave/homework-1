@@ -19,6 +19,12 @@ public abstract class Character{
     public abstract String getCharacterClass();
     public abstract void displayStats();
 
-    public void setWeapon(Weapon weapon){this.weapon = weapon;}
-    public void setArmor(Armor armor){this.armor = armor;}}
+    public void setWeapon(Weapon weapon){
+        this.weapon = weapon;
+        System.out.println(this.name + " takes the " + weapon.getName());
+    }
+    public void setArmor(Armor armor){
+        this.armor = armor;
+        System.out.println(this.name + " puts on the " + armor.getName());
+    }}
 
