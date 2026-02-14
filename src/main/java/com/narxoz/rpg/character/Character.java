@@ -17,6 +17,7 @@ public abstract class Character{
     }
     public abstract String useSpecialAbility();
     public abstract String getCharacterClass();
+    public abstract void displayStats();
 
     public void setWeapon(Weapon weapon){this.weapon = weapon;}
     public void setArmor(Armor armor){this.armor = armor;}
