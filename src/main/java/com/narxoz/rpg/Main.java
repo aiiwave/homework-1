@@ -18,10 +18,10 @@ public class Main {
         myWarrior.equipWeapon(sword);
         myWarrior.equipArmor(plate);
 
-        myWarrior.displayStatus();
+        myWarrior.displayStats();
         System.out.println(myWarrior.useSpecialAbility());
         System.out.println("\n-------------------\n");
 
         Character myMage = charFactory.createCharacter("Mage", "Gandalf");
-        myMage.displayStatus();
+        myMage.displayStats();
         System.out.println(myMage.useSpecialAbility());}}
