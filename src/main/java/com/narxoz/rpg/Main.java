@@ -14,14 +14,10 @@ public class Main {
         Character myWarrior = charFactory.createCharacter("Warrior", "Aragorn");
         Weapon sword = equipFactory.createWeapon("Sword");
         Armor plate = equipFactory.createArmor("Plate");
-
-        myWarrior.equipWeapon(sword);
-        myWarrior.equipArmor(plate);
-
-        myWarrior.displayStats();
-        System.out.println(myWarrior.useSpecialAbility());
-        System.out.println("\n-------------------\n");
-
-        Character myMage = charFactory.createCharacter("Mage", "Gandalf");
-        myMage.displayStats();
-        System.out.println(myMage.useSpecialAbility());}}
+    
+        if(myWarrior != null){
+            myWarrior.setWeapon(sword);
+            myWarrior.setArmor(plate);
+            myWarrior.displayStats();
+            System.out.println(myWarrior.useSpecialAbility());
+        }}}
