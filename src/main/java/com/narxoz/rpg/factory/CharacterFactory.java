@@ -2,7 +2,7 @@ package com.narxoz.rpg.factory;
 import com.narxoz.rpg.character.*;
 
 public class CharacterFactory{
-	public Character createCharacter(String type, String name){
+	public com.narxoz.rpg.character.Character createCharacter(String type, String name){
 		if(type.equalsIgnoreCase("WARRIOR")){
 			return new Warrior(name);}
 		else if(type.equalsIgnoreCase("MAGE")){
