@@ -16,7 +16,7 @@ public class Mage extends Character{
 		return "Mage";}
 
 	@Override
-	pubilc void displayStats(){
+	public void displayStats(){
 		System.out.println("=== " + this.name + " (Mage) ===");
 		System.out.println("Health: " + this.health);
         System.out.println("Mana: " + this.mana);
