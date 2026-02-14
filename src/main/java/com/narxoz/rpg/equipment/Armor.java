@@ -10,8 +10,4 @@ public class Armor{
     }
     public String getName(){
         return name;
-    }
-    public int getDefense(){
-        return defense;
-    }
-}
+    }}
