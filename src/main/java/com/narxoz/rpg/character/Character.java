@@ -20,14 +20,5 @@ public abstract class Character{
     public abstract void displayStats();
 
     public void setWeapon(Weapon weapon){this.weapon = weapon;}
-    public void setArmor(Armor armor){this.armor = armor;}
-
-    public String getDetails(){
-        return String.format(
-            "Name: %s [%s]\nHP: %d, MP: %d\nSTR: %d, INT: %d",
-            name, getCharacterClass(), health, mana, strength, intelligence
-        );
-    }
-    public String getName(){return name;}
-}
+    public void setArmor(Armor armor){this.armor = armor;}}
 
