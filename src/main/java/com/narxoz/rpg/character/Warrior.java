@@ -31,11 +31,4 @@ public class Warrior extends Character {
     @Override
     public String useSpecialAbility() {
         return name + " uses 'POWER OF THE GODS'! He is now stronger!";
-    }
-    public void equipWeapon(Weapon weapon){
-        setWeapon(weapon);
-        System.out.println(this.name + " takes the " + weapon.getName());}
-
-    public void equipArmor(Armor armor){
-        setArmor(armor);
-        System.out.println(this.name + " puts on the " + armor.getName());}}
+    }}
