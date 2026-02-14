@@ -13,8 +13,4 @@ public class Weapon{
     }
     public String getName(){
         return name;
-    }
-    public int getDefenseValue(){
-        return defense;
-    }
-}
+    }}
