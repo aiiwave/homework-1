@@ -8,7 +8,7 @@ public class EquipmentFactory{
 		if(type.equalsIgnoreCase("STAFF")) return new Weapon("Magic Staff", 15);
 		return null;
 	}
-	public Weapon createArmor(String type){
+	public Armor createArmor(String type){
 		if(type.equalsIgnoreCase("PLATE")) return new Armor("Plate Mail", 50);
 		if(type.equalsIgnoreCase("ROBE")) return new Armor("Wizard Robe", 10);
 		return null;
