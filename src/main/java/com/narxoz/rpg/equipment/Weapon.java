@@ -1,8 +1,20 @@
-package com.narxoz.rpg.equipment;
+package com.narxoz.rpg.character;
 
-public interface Weapon {
-    String getName();
-    int getDamageValue();
-    String getAttackAction();
-    String getDamageType();
+import com.narxoz.rpg.equipment.Weapon;
+import com.narxoz.rpg.equipment.Armor;
+
+public class Weapon{
+    private String name;
+    private int defense;
+
+    public Weapon(String name, int defense){
+        this.name = name;
+        this.defense = defense;
+    }
+    public String getName(){
+        return name;
+    }
+    public int getDefenseValue(){
+        return defense;
+    }
 }
