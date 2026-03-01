@@ -1,5 +1,2 @@
 package com.narxoz.rpg.equipment;
-
-public class IronSword extends Weapon{
-    public IronSword(){
-        super("Iron Sword", 25);}}
+public class IronSword implements Weapon { @Override public String getInfo() { return "железный меч"; } }
