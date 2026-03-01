@@ -10,10 +10,8 @@ public abstract class Character {
     protected Armor armor;
 
     public Character(String name) { this.name = name; }
-
     public void setWeapon(Weapon weapon) { this.weapon = weapon; }
     public void setArmor(Armor armor) { this.armor = armor; }
-
     public abstract void displayStats();
     public abstract String useSpecialAbility();
     public abstract String getCharacterClass();
